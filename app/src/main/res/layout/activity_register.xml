@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Tanggal Pengerjaan : 27 April 2023
+    NIM  : 10120768
+    Nama : Syifaul Mukminin
+    Kelas: IF9
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/appBarLayout"
+        android:background="@drawable/ic_header"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:padding="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_header_back" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regis"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/username"
+                android:textColor="@color/font_desc"
+                android:backgroundTint="@color/font_desc"
+                android:textSize="16dp"
+                android:paddingVertical="18dp" />
+
+            <EditText
+                android:id="@+id/editTextText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/email"
+                android:textColor="@color/font_desc"
+                android:backgroundTint="@color/font_desc"
+                android:textSize="16dp"
+                android:paddingVertical="18dp" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="@string/phone"
+                android:textColor="@color/font_desc"
+                android:backgroundTint="@color/font_desc"
+                android:textSize="16dp"
+                android:paddingVertical="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="@string/male"
+                    android:textColor="@color/font_desc"
+                    android:backgroundTint="@color/font_desc"
+                    android:textSize="16dp"
+                    android:paddingVertical="18dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:text="@string/female"
+                    android:textColor="@color/font_desc"
+                    android:backgroundTint="@color/font_desc"
+                    android:textSize="16sp"
+                    android:paddingVertical="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="@string/blood"
+                    android:textColor="@color/font_desc"
+                    android:backgroundTint="@color/font_desc"
+                    android:textSize="16sp"
+                    android:paddingVertical="18dp"
+                    android:drawableRight="@drawable/ic_register_dropdown"/>
+
+                <EditText
+                    android:id="@+id/editTextText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="@string/rhesus"
+                    android:textColor="@color/font_desc"
+                    android:backgroundTint="@color/font_desc"
+                    android:textSize="16dp"
+                    android:paddingVertical="18dp"
+                    android:drawableRight="@drawable/ic_arrow_dropdown"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextText7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/pass"
+                android:textColor="@color/font_desc"
+                android:backgroundTint="@color/font_desc"
+                android:textSize="16dp"
+                android:paddingVertical="18dp" />
+
+            <EditText
+                android:id="@+id/editTextText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/retype_pass"
+                android:textColor="@color/font_desc"
+                android:backgroundTint="@color/font_desc"
+                android:textSize="16dp"
+                android:paddingVertical="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:text="@string/personal"
+                    android:textColor="@color/font_desc"
+                    android:backgroundTint="@color/font_desc"
+                    android:textSize="16dp"
+                    android:paddingVertical="18dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:text="@string/organization"
+                    android:textColor="@color/font_desc"
+                    android:backgroundTint="@color/font_desc"
+                    android:textSize="16dp"
+                    android:paddingVertical="18dp"  />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextText9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/job"
+                android:textColor="@color/font_desc"
+                android:backgroundTint="@color/font_desc"
+                android:textSize="16dp"
+                android:paddingVertical="18dp"
+                android:drawableRight="@drawable/ic_arrow_dropdown"/>
+
+            <EditText
+                android:id="@+id/editTextText10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/address"
+                android:textColor="@color/font_desc"
+                android:backgroundTint="@color/font_desc"
+                android:textSize="16dp"
+                android:paddingVertical="18dp" />
+
+            <EditText
+                android:id="@+id/editTextText11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/loc"
+                android:textColor="@color/font_desc"
+                android:backgroundTint="@color/font_desc"
+                android:textSize="16dp"
+                android:paddingVertical="18dp"
+                android:drawableRight="@drawable/ic_blood_needed_location" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms"
+                android:textColor="@color/font_desc"
+                android:backgroundTint="@color/font_desc"
+                android:textSize="16dp"
+                android:paddingVertical="18dp"/>
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                app:cornerRadius="5dp"
+                app:strokeColor="@color/light_blue"
+                android:backgroundTint="@color/white"
+                app:strokeWidth="1dp"
+                android:textColor="@color/light_blue"
+                android:padding="12dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="25dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
